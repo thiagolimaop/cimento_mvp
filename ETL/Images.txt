@@ -1,0 +1,1 @@
+Aqui serão colocadas imagens para mostrar o processo de ETL construído dentro da ferramenta do dataprep.
