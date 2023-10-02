@@ -19,15 +19,15 @@ c) Há uma correlação negativa entre as admissões no setor de construção ci
 
 Foram coletados os seguintes dados através do datalake do governo hospedado no Bigquery da Google:
 
-- <b>Índice Nacional de Preços ao Consumidor Amplo (IPCA)</b>: O IPCA é utilizado como indicador oficial do País desde 1985 para corrigir salários, aluguéis, taxa de câmbio, poupança, entre outros.  
-- <b>Cadastro Geral de Empregados e Desempregados (CAGED)</b>: Foi criado como instrumento de acompanhamento e de fiscalização do processo de admissão e de dispensa de trabalhadores regidos pela CLT, com o objetivo de assistir os desempregados e de apoiar medidas contra o desemprego.
-- <b>Cadastro Nacional de Obras (CNO)</b>: O cadastro nacional de obras (CNO) é uma base de dados de registro de obras de construção civil administrado pela Receita Federal.
+- <b>[Índice Nacional de Preços ao Consumidor Amplo](https://basedosdados.org/dataset/ea4d07ca-e779-4d77-bcfa-b0fd5ebea828?table=f1fd2eb7-467a-403b-8f1c-2de8eff354e6)</b>: O IPCA é utilizado como indicador oficial do País desde 1985 para corrigir salários, aluguéis, taxa de câmbio, poupança, entre outros.  
+- <b>[Cadastro Geral de Empregados e Desempregados (CAGED)](https://basedosdados.org/dataset/562b56a3-0b01-4735-a049-eeac5681f056?table=2245875f-d1ef-490d-be29-4f8fb2191335)</b>: Foi criado como instrumento de acompanhamento e de fiscalização do processo de admissão e de dispensa de trabalhadores regidos pela CLT, com o objetivo de assistir os desempregados e de apoiar medidas contra o desemprego.
+- <b>[Cadastro Nacional de Obras (CNO)](https://basedosdados.org/dataset/88580166-bd00-4f73-b86b-97f3a3515b36?table=157149ea-7191-4e3e-a5ae-47b2a1671d3b)</b>: O cadastro nacional de obras (CNO) é uma base de dados de registro de obras de construção civil administrado pela Receita Federal.
 
 Também foram coletados Câmara Brasileira da Indústria da Construção:
 
-- Consumo de cimento por estado por mês e ano
-- Produção de cimento por estado mês e ano
-- Preço do cimento por estado mês e ano
+- [Consumo de cimento por estado por mês e ano](http://www.cbicdados.com.br/menu/materiais-de-construcao/cimento)
+- [Produção de cimento por estado mês e ano](http://www.cbicdados.com.br/menu/materiais-de-construcao/cimento)
+- [Preço do cimento por estado mês e ano](http://www.cbicdados.com.br/menu/materiais-de-construcao/cimento)
 
 Para coletar os dados levamos em consideração que o período amostral da menor amostra de dados que tinhamos, que no caso foi a tabela de cadastros nacional de obras, que abrangeu apenas dados do período de janeiro de 2018 até maio de 2021. Logo, este período foi utilizado para coletar as demais amostras. 
 
