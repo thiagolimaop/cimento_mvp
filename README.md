@@ -12,10 +12,8 @@ c) Há uma correlação negativa entre as admissões no setor de construção ci
 
 1. [Coleta dos dados](#coleta)
 2. [Modelagem dos dados](#modelagem)
-3. [File Descriptions](#files)
-4. [Results](#results)
-5. [Acknowledgments](#acknowledgments)
-6. [Licensing and Author](#licensing)
+3. [Processo ETL](#etl_process)
+4. [Análise de dados](#data_analitics)
 
 ## Coleta dos dados <a name="coleta"></a>
 
@@ -59,4 +57,15 @@ Onde cnae_2_secao = F => Setor de construção civil;
 ## Modelagem dos dados<a name="modelagem"></a>
 
 Através de todos estes dados foi construída uma única tabela que envolve dados por estados, mês e ano de cada uma das tabelas fontes.
-Um print do catálogo dos dados pode ser visto neste repositório, com a descrição detalhada dos dados e domínios.
+Um print do catálogo dos dados pode ser visto neste repositório, através do nome "catalogo_dados.jpg" com a descrição detalhada dos dados e domínios.
+A linhagem de dados gerada pelo google bigquery também pode ser vista através dad imagem "linhagem_dados.jpg".
+
+## Processo ETL<a name="etl_process"></a>
+
+Uma imagem do processo geral de pipeline de dados construido na ferramenta do DataPrep pode ser vista na imagem "pipeline_overview_dataprep.jpg". Nesta imagem a primeira coluna representa os arquivos fontes .csv carregados na ferramenta. A segunda coluna representa os processos. Cada processo foi documentado dentro da pasta ETL, alguns que fornecem processos bem semelhates foram colocados apenas uma vez. Por exemplo podemos observar na imagem "pipeline_overview_dataprep.jpg" uma caixinha com o nome amostra-2018-i, na pasta ETL, existe uma imagem de mesmo nome desta caixinha que representa os processos de tratamento de dados aplicado nesta caixa. Especificamente para esta última caixa não existe nenhum processo de tratamento de dados, pois foi apenas colhida uma nova amostra para se ter uma representatividade de todos os estados e meses representados nos dados.
+
+A caixinha denominada caged por exemplo que tem uma imagem de mesmo nome mostra uma amostra dos dados, a distribuição dos dados, e do lado direito mostra as transformações dos dados que foram aplicadas. Neste caso em particular, esta caixa é formada pela união entre dois conjuntos de dados, amostra-2018-i e 
+A caixinha denominada caged por exemplo que tem uma imagem de mesmo nome mostra uma amostra dos dados, a distribuição dos dados, e do lado direito mostra uma sessão denominada recipes com as transformações dos dados que foram aplicadas. Neste caso em particular, esta caixa é formada pela união entre dois conjuntos de dados, amostra-2018-i e amostra-2018-ii. Posteriormente foi aplicado um pivoteamento para contar a quantidade de admissões e demissões existentes. Posteriormente foram renomeadas as colunas pivoteadas.
+
+## Análise de dados<a name="data_analitics"></a>
+A análise de dados pode ser vista no arquivo "Estudo_Cimento.ipynb" com as observações do estudo e devidas conclusões.
